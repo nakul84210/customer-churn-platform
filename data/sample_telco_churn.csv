@@ -1,0 +1,11 @@
+customerID,gender,SeniorCitizen,Partner,Dependents,tenure,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod,MonthlyCharges,TotalCharges,Churn
+0001-FEAT1,Female,0,Yes,No,1,No,No phone service,DSL,No,Yes,No,No,No,No,Month-to-month,Yes,Electronic check,29.85,29.85,Yes
+0002-FEAT2,Male,0,No,No,34,Yes,No,DSL,Yes,No,Yes,No,No,No,One year,No,Mailed check,56.95,1889.5,No
+0003-FEAT3,Male,0,No,No,2,Yes,No,DSL,Yes,Yes,No,No,No,No,Month-to-month,Yes,Mailed check,53.85,108.15,Yes
+0004-FEAT4,Male,0,No,No,45,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,One year,Yes,Electronic check,42.30,1840.75,No
+0005-FEAT5,Female,0,Yes,Yes,8,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,99.65,820.5,Yes
+0006-FEAT6,Female,0,Yes,Yes,22,Yes,Yes,DSL,Yes,No,Yes,Yes,No,No,Two year,No,Credit card (automatic),89.10,1950.5,No
+0007-FEAT7,Male,0,No,No,10,Yes,No,Fiber optic,No,Yes,No,No,Yes,No,Month-to-month,Yes,Bank transfer (automatic),29.75,297.5,Yes
+0008-FEAT8,Female,0,Yes,No,28,Yes,Yes,DSL,Yes,Yes,Yes,No,No,No,One year,No,Credit card (automatic),84.80,2374.4,No
+0009-FEAT9,Male,1,No,No,5,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check,95.50,477.5,Yes
+0010-FEAT10,Male,0,Yes,No,60,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Bank transfer (automatic),70.35,4221.0,No

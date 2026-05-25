@@ -1,0 +1,34 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+.venv/
+venv/
+env/
+
+.DS_Store
+.idea/
+.vscode/
+
+# data outputs / reports
+reports/*.pdf
+reports/*.html
+reports/*.png
+
+# model artifacts
+model/*.joblib
+model/*.json
+
+# streamlit
+.streamlit/
+
+# env
+.env
+
+
+.venv/
+__pycache__/
+.env
+*.pyc
+.DS_Store
