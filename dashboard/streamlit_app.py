@@ -1,24 +1,32 @@
 from __future__ import annotations
 
-import os
 from pathlib import Path
 
-import pandas as pd
 import streamlit as st
 
 from dashboard.components.auth import require_login
 from dashboard.components.theme import apply_theme
-from utils.data_loader import load_csv, ensure_total_charges_numeric
+from utils.data_loader import ensure_total_charges_numeric, load_csv
 from utils.preprocessing import clean_dataframe
 
 APP_ROOT = Path(__file__).resolve().parent.parent
-
 
 st.set_page_config(
     page_title="Customer Churn Platform",
     page_icon="📉",
     layout="wide",
     initial_sidebar_state="expanded",
+)
+
+# Small layout polish (spacing)
+st.markdown(
+    """
+    <style>
+      .block-container { padding-top: 2rem; padding-bottom: 2rem; }
+      [data-testid="stSidebar"] { padding-top: 1rem; }
+    </style>
+    """,
+    unsafe_allow_html=True,
 )
 
 apply_theme()
@@ -29,11 +37,16 @@ st.caption("FastAPI + Streamlit • ML (LogReg/RF/XGBoost) • SHAP • Segmenta
 
 with st.sidebar:
     st.markdown("### Quick links")
-    st.page_link("dashboard/streamlit_app.py", label="Home", icon="🏠")
-    st.page_link("dashboard/pages/1_📤_Upload_Dataset.py", label="Upload Dataset", icon="📤")
-    st.page_link("dashboard/pages/3_🧠_Model_Training.py", label="Model Training", icon="🧠")
-    st.page_link("dashboard/pages/4_🔮_Prediction.py", label="Prediction", icon="🔮")
-    st.page_link("dashboard/pages/8_🧪_API_Tester.py", label="API Tester", icon="🧪")
+    # IMPORTANT: paths are relative to the main script's directory (dashboard/)
+    st.page_link("streamlit_app.py", label="Home", icon="🏠")
+    st.page_link("pages/1_📤_Upload_Dataset.py", label="Upload Dataset", icon="📤")
+    st.page_link("pages/2_📊_EDA_Dashboard.py", label="EDA Dashboard", icon="📊")
+    st.page_link("pages/3_🧠_Model_Training.py", label="Model Training", icon="🧠")
+    st.page_link("pages/4_🔮_Prediction.py", label="Prediction", icon="🔮")
+    st.page_link("pages/5_🧩_Customer_Segmentation.py", label="Customer Segmentation", icon="🧩")
+    st.page_link("pages/6_🧠_SHAP_Explainability.py", label="SHAP Explainability", icon="🧠")
+    st.page_link("pages/7_🧾_Reports.py", label="Reports", icon="🧾")
+    st.page_link("pages/8_🧪_API_Tester.py", label="API Tester", icon="🧪")
 
 st.markdown("## What this app does")
 c1, c2, c3 = st.columns(3)
